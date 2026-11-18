@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Charme Brechó | Links</title>
+<meta name="description" content="Garimpe pelo WhatsApp, veja as novidades e visite o Charme Brechó na Rua da Consolação, 2190, São Paulo.">
+<link rel="icon" href="../img/favicon.png">
+<meta name="theme-color" content="#F6F2E8">
+<meta property="og:title" content="Charme Brechó | Roupa foi feita para usar e reusar">
+<meta property="og:description" content="Peças vintage e exclusivas na Consolação, São Paulo.">
+<meta property="og:image" content="https://charme-brecho-exemplo.vercel.app/img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+/*
+VOICE   afetivo e curado: o Charme Brechó no bolso
+IDEA    folhas da loja caindo devagar atrás de banners com fotos reais
+COLOUR  verde floresta e dourado do logo, creme e menta
+TYPE    Playfair Display, DM Sans e Allura na assinatura
+*/
+:root{
+  --oliva:#2E6B45; --oliva-esc:#255A39; --musgo:#12402B; --musgo-esc:#0B2A1C; --ouro:#C9A24E; --ouro-claro:#E2C77F;
+  --creme:#F6F2E8; --areia:#E4ECDD; --vinho:#9A7A2E; --cafe:#14301F; --tinta:#22302A;
+  --serif:"Playfair Display",Georgia,serif; --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box;min-width:0;-webkit-tap-highlight-color:transparent}
+html{overflow-x:clip}
+body{margin:0;min-height:100svh;background:var(--areia);color:var(--tinta);font:15px/1.5 var(--sans);overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* ===== Fundo animado: folhas e flores ===== */
+.jardim{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.jardim .luz{position:absolute;border-radius:50%;filter:blur(40px);opacity:.55;animation:luz 18s ease-in-out infinite alternate}
+.l1{width:70vmax;height:70vmax;background:radial-gradient(circle,#d3e6cf,transparent 65%);left:-30vmax;top:-20vmax}
+.l2{width:60vmax;height:60vmax;background:radial-gradient(circle,#efe3c4,transparent 65%);right:-25vmax;bottom:-20vmax;animation-delay:-8s}
+@keyframes luz{to{transform:translate(6vmax,4vmax) scale(1.1)}}
+.p{position:absolute;top:-60px;left:var(--x);width:var(--s);height:var(--s);color:var(--c);opacity:var(--o);animation:cai var(--t) linear infinite;animation-delay:var(--dl)}
+.p svg{width:100%;height:100%;animation:gira var(--g) ease-in-out infinite alternate}
+@keyframes cai{0%{transform:translate3d(0,-10vh,0)}100%{transform:translate3d(var(--dx),115vh,0)}}
+@keyframes gira{from{transform:rotate(-35deg)}to{transform:rotate(55deg)}}
+
+/* ===== Coluna ===== */
+.app{position:relative;z-index:1;max-width:480px;margin:0 auto;min-height:100svh;background:rgba(246,242,232,.84);backdrop-filter:blur(2px);box-shadow:0 0 0 1px rgba(20,48,31,.06),0 30px 80px -40px rgba(11,42,28,.45);padding-bottom:env(safe-area-inset-bottom)}
+
+/* ===== Topo ===== */
+.topo{position:relative;height:clamp(440px,118vw,520px);overflow:hidden;background:linear-gradient(180deg,#e7efe1,var(--creme))}
+.topo .foto{position:absolute;right:-4%;bottom:0;width:60%;height:100%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+.topo .foto img{width:100%;height:100%;object-fit:cover;object-position:46% 14%;animation:respira 16s ease-in-out infinite alternate}
+@keyframes respira{to{transform:scale(1.06) translateY(-6px)}}
+.topo::after{content:"";position:absolute;inset:auto 0 0;height:38%;background:linear-gradient(180deg,transparent,var(--creme) 88%)}
+.mono{position:absolute;left:6%;top:4%;font:400 112px/1 "Allura",cursive;color:rgba(201,162,78,.28);transform:rotate(-8deg)}
+.nome{position:absolute;left:6.5%;top:25%;z-index:2;max-width:54%}
+.nome h1{margin:0;font:500 clamp(40px,11.5vw,54px)/.98 var(--serif);color:var(--musgo);letter-spacing:-.015em}
+.nome h1 em{display:block;font-style:italic;color:var(--oliva-esc);font-size:.62em;margin-top:10px;line-height:1.1}
+.nome p{margin:16px 0 0;font-size:14.5px;line-height:1.45;color:#45554B;max-width:12.5em}
+.nome p b{color:var(--cafe);font-weight:600}
+.crp{position:absolute;z-index:2;left:6.5%;bottom:30px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.85);backdrop-filter:blur(6px);padding:8px 14px 8px 10px;border-radius:99px;font-size:12.5px;font-weight:500;color:var(--cafe);box-shadow:0 10px 24px -14px rgba(11,42,28,.5)}
+.crp svg{width:18px;height:18px;color:var(--ouro)}
+.logo-topo{position:absolute;z-index:3;right:5%;top:5%;width:74px;height:74px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px #fff,0 0 0 4.5px var(--ouro),0 14px 30px -14px rgba(11,42,28,.6)}
+.ramo{position:absolute;z-index:2;right:4%;bottom:14px;width:150px;color:var(--oliva-esc)}
+.ramo path,.ramo use{fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:desenha 2.6s .6s var(--ease) forwards}
+@keyframes desenha{to{stroke-dashoffset:0}}
+
+/* ===== Lista de links ===== */
+.links{display:grid;gap:12px;padding:6px 16px 0}
+.banner{position:relative;display:flex;align-items:center;gap:14px;min-height:104px;padding:16px 16px 16px 18px;border-radius:22px;overflow:hidden;isolation:isolate;color:#fff;background:var(--oliva);box-shadow:0 16px 30px -20px rgba(11,42,28,.75);transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.banner:active{transform:scale(.97)}
+@media(hover:hover){.banner:hover{transform:translateY(-3px);box-shadow:0 24px 40px -22px rgba(11,42,28,.8)}}
+.banner .bg{position:absolute;inset:0;z-index:-2;background-size:cover;background-position:var(--pos,50% 40%);animation:ken 20s ease-in-out infinite alternate}
+@keyframes ken{to{transform:scale(1.12)}}
+.banner::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(95deg,rgba(11,42,28,.95) 0%,rgba(18,64,43,.84) 46%,rgba(46,107,69,.3) 100%)}
+.banner::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.28) 48%,transparent 66%);transform:translateX(-120%);animation:brilho 6s var(--ease) infinite;animation-delay:var(--sh,0s)}
+@keyframes brilho{0%,62%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+.med{flex:none;width:56px;height:56px;border-radius:50%;background:var(--creme);color:var(--musgo);display:grid;place-items:center;box-shadow:0 0 0 5px rgba(255,255,255,.14)}
+.med svg{width:28px;height:28px}
+.txt{flex:1}
+.txt b{display:block;font:500 21px/1.12 var(--serif)}
+.txt small{display:block;margin-top:5px;font-size:13px;line-height:1.35;color:rgba(255,255,255,.86)}
+.chev{flex:none;width:22px;height:22px;opacity:.9;transition:transform .4s var(--ease)}
+.banner:hover .chev{transform:translateX(4px)}
+.tag{display:inline-block;margin-bottom:6px;font-size:11px;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--creme);color:var(--musgo)}
+
+/* destaque principal */
+.principal{min-height:120px;background:var(--musgo)}
+.principal::before{background:radial-gradient(120% 140% at 100% 0%,rgba(201,162,78,.55),transparent 60%),linear-gradient(95deg,var(--musgo-esc),var(--musgo))}
+.principal .med{background:var(--ouro);color:var(--musgo-esc);animation:pulso 2.6s var(--ease) infinite}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(201,162,78,.7)}100%{box-shadow:0 0 0 18px rgba(201,162,78,0)}}
+.principal .txt b{font-size:23px}
+.ilus{position:absolute;right:-18px;bottom:-24px;width:150px;color:rgba(226,199,127,.35);z-index:-1}
+.ilus path,.ilus use{fill:none;stroke:currentColor;stroke-width:1.5}
+
+/* banner claro */
+.claro{color:var(--cafe);background:#fff}
+.claro::before{background:linear-gradient(95deg,#fff 0%,rgba(255,255,255,.92) 52%,rgba(255,255,255,.2) 100%)}
+.claro .med{background:var(--oliva);color:#fff;box-shadow:0 0 0 5px rgba(46,107,69,.14)}
+.claro .txt small{color:#56645A}
+.claro .tag{background:var(--oliva);color:#fff}
+
+/* mini atalhos */
+.atalhos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:12px 16px 0}
+.mini{background:#fff;border-radius:18px;padding:14px 8px 12px;text-align:center;box-shadow:0 10px 24px -20px rgba(11,42,28,.6);transition:transform .4s var(--ease)}
+.mini:active{transform:scale(.95)}
+.mini span{width:42px;height:42px;margin:0 auto 8px;border-radius:50%;background:var(--creme);color:var(--oliva-esc);display:grid;place-items:center}
+.mini svg{width:22px;height:22px}
+.mini b{display:block;font:500 15px/1.15 var(--serif);color:var(--cafe)}
+.mini small{display:block;font-size:11.5px;color:#68756C;margin-top:2px}
+
+/* frase */
+.frase{margin:26px 16px 0;padding:26px 24px;border-radius:22px;background:var(--creme);border:1px solid rgba(20,48,31,.1);text-align:center;font:italic 400 20px/1.4 var(--serif);color:var(--cafe);position:relative}
+.frase svg{width:40px;height:24px;color:var(--oliva);margin:0 auto 10px;display:block}
+.frase small{display:block;margin-top:10px;font:500 12.5px var(--sans);color:#68756C;font-style:normal}
+
+/* números + rodapé */
+.rod{margin-top:26px;background:var(--musgo);color:#dfe8df;border-radius:28px 28px 0 0;padding:24px 20px 30px;position:relative;overflow:hidden}
+.nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));text-align:center;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.14)}
+.nums div+div{border-left:1px solid rgba(255,255,255,.14)}
+.nums b{display:block;font:400 22px/1.1 var(--serif);color:var(--creme)}
+.nums small{display:block;font-size:10.5px;letter-spacing:.04em;margin-top:4px;color:#b9cbbd;text-transform:uppercase}
+.redes{display:flex;gap:10px;margin:20px 0 6px;align-items:center}
+.redes span{font-size:12.5px;color:#b9cbbd;margin-right:auto}
+.redes a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;color:var(--creme);transition:background .3s}
+.redes a:active,.redes a:hover{background:var(--ouro);color:var(--musgo-esc)}
+.redes svg{width:19px;height:19px}
+.assin{font:400 44px/1 "Allura",cursive;white-space:nowrap;color:#E2C77F;text-align:right;margin-top:8px}
+.legal{font-size:11.5px;line-height:1.5;color:#9fb3a4;margin-top:6px}
+
+/* entrada */
+.js .in{opacity:0;transform:translateY(22px);animation:entra .9s var(--ease) forwards;animation-delay:calc(var(--d,0) * 90ms + 200ms)}
+@keyframes entra{to{opacity:1;transform:none}}
+
+@media(min-width:520px){body{padding:24px 0}.app{border-radius:34px;overflow:hidden}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .in{opacity:1;transform:none}.ramo path,.ramo use{stroke-dashoffset:0}.jardim .p{display:none}}
+
+/* ===== Faixa de demonstração (remover ao publicar oficialmente) ===== */
+.demo{position:fixed;left:0;right:0;bottom:0;z-index:999;display:flex;align-items:center;justify-content:center;gap:10px;padding:9px 16px calc(9px + env(safe-area-inset-bottom));background:rgba(11,42,28,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#F5F1E9;font:500 13px/1.35 "DM Sans",system-ui,sans-serif;text-align:center;box-shadow:0 -10px 30px -18px rgba(0,0,0,.5)}
+.demo svg{width:18px;height:18px;flex:none;color:#E2C77F}
+.demo b{color:#fff;font-weight:600}
+.app{padding-bottom:calc(58px + env(safe-area-inset-bottom))!important}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs><path id="folha" pathLength="1" d="M0 0C7-8 21-9 30 0C21 9 7 8 0 0Z"/></defs>
+  <symbol id="ramo" viewBox="0 0 320 120"><path pathLength="1" d="M6 112C70 96 150 70 210 42C250 24 286 12 314 8"/><use href="#folha" transform="translate(40 101) rotate(-60)"/><use href="#folha" transform="translate(52 99) rotate(40)"/><use href="#folha" transform="translate(92 88) rotate(-70)"/><use href="#folha" transform="translate(104 84) rotate(30)"/><use href="#folha" transform="translate(146 70) rotate(-75)"/><use href="#folha" transform="translate(158 64) rotate(22)"/><use href="#folha" transform="translate(200 47) rotate(-80)"/><use href="#folha" transform="translate(212 41) rotate(15)"/><use href="#folha" transform="translate(252 26) rotate(-82)"/><use href="#folha" transform="translate(262 22) rotate(8)"/><use href="#folha" transform="translate(300 10) rotate(-20) scale(.8)"/></symbol>
+  <symbol id="p-folha" viewBox="0 0 40 40"><path fill="currentColor" d="M6 34C6 18 18 6 34 6c0 16-12 28-28 28Z" opacity=".9"/><path d="M8 32 30 10" stroke="#fff" stroke-opacity=".5" stroke-width="1.2" fill="none"/></symbol>
+  <symbol id="p-flor" viewBox="0 0 40 40"><g fill="currentColor"><ellipse cx="20" cy="10" rx="6" ry="9"/><ellipse cx="20" cy="10" rx="6" ry="9" transform="rotate(72 20 20)"/><ellipse cx="20" cy="10" rx="6" ry="9" transform="rotate(144 20 20)"/><ellipse cx="20" cy="10" rx="6" ry="9" transform="rotate(216 20 20)"/><ellipse cx="20" cy="10" rx="6" ry="9" transform="rotate(288 20 20)"/></g><circle cx="20" cy="20" r="4" fill="#F6F2E8"/></symbol>
+  <symbol id="p-ramo" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 36C14 26 22 16 34 4"/><path d="M14 26c-5-1-7-5-6-9 4 1 6 5 6 9ZM20 19c4-3 9-3 11 0-3 3-8 3-11 0ZM24 13c-2-4-1-8 2-10 2 4 1 8-2 10Z" fill="currentColor" fill-opacity=".35"/></symbol>
+  <symbol id="i-ramo" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20C14 16 26 9 38 3"/><path d="M10 17c-1-5 2-8 6-9-1 5-3 8-6 9Z"/><path d="M19 13c1-5 5-7 9-6-2 4-5 6-9 6Z"/><path d="M27 8c0-3 2-5 5-6"/></symbol>
+  <symbol id="i-whats" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5l1.1-3.6A8 8 0 1 1 8.3 18.6Z"/><path d="M9.2 8.6c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .4-.1.6l-.5.6c-.1.1-.1.3 0 .5.6 1 1.4 1.8 2.4 2.3.2.1.4.1.5-.1l.6-.7c.1-.2.4-.2.6-.1l1.4.7c.2.1.3.3.3.5 0 .7-.4 1.4-1.1 1.6-.9.3-2.4 0-4.2-1.4-1.8-1.5-2.7-3.2-2.8-4.2 0-.6.2-1.2.5-1.7Z"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="i-novo" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 5h12a2 2 0 0 1 2 2v12L19 35a2 2 0 0 1-2.8 0L5 23.8a2 2 0 0 1 0-2.8Z"/><circle cx="28" cy="12" r="2.4"/><path d="M14 20l1 2.4 2.4 1-2.4 1-1 2.4-1-2.4-2.4-1 2.4-1Z"/></symbol>
+  <symbol id="i-loja" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h28"/><path d="M8 6c0 9 3 20 1 28h9c-2-8 1-19 1-28"/><path d="M32 6c0 9-3 20-1 28h-9"/></symbol>
+  <symbol id="i-cabide" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11a3 3 0 1 1 4.4 2.6c-.9.5-1.4 1.3-1.4 2.2v1.6"/><path d="M20 17.4 4.6 27.2A1.6 1.6 0 0 0 5.5 30h29a1.6 1.6 0 0 0 .9-2.8Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-renascer" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 36V18"/><path d="M20 24c-6 0-10-4-10-10 6 0 10 4 10 10Z"/><path d="M20 19c0-6 4-11 11-11 0 6-4 11-11 11Z"/><path d="M12 36h16"/></symbol>
+  <symbol id="i-destrave" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="18" width="22" height="16" rx="4"/><path d="M14 18v-5a6 6 0 0 1 11.5-2.3"/><circle cx="20" cy="25" r="2"/><path d="M20 27v3"/></symbol>
+  <symbol id="i-site" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="30" height="24" rx="4"/><path d="M5 14h30"/><circle cx="9.5" cy="11" r=".8" fill="currentColor"/><circle cx="12.5" cy="11" r=".8" fill="currentColor"/><path d="M12 26c3-5 6-7 9-7M18 26c2-3 5-5 9-5"/></symbol>
+  <symbol id="i-livro" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 12c-4-3-10-4-16-3v27c6-1 12 0 16 3 4-3 10-4 16-3V9c-6-1-12 0-16 3Z"/><path d="M24 12v27"/></symbol>
+  <symbol id="i-acolhe" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 26c4 0 7-3 10-3h6a2 2 0 0 1 0 4h-5"/><path d="M15 27h8l9-6a2 2 0 0 1 2.7 3L25 33H12l-8 2"/><path d="M24 15s-6-3.3-6-7c0-1.7 1.3-3 3-3 1.3 0 2.4.8 3 1.8.6-1 1.7-1.8 3-1.8 1.7 0 3 1.3 3 3 0 3.7-6 7-6 7Z"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11.5A7 7 0 0 0 5 9.5C5 15 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-estrela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.8l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8Z"/></symbol>
+  <symbol id="i-escudo" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3 6 7v8c0 7 4.5 11.5 10 14 5.5-2.5 10-7 10-14V7Z"/><path d="M11.5 16l3 3 6-6"/></symbol>
+</svg>
+
+<div class="jardim" aria-hidden="true"><div class="luz l1"></div><div class="luz l2"></div></div>
+
+<main class="app">
+  <header class="topo">
+    <div class="mono">Cb</div>
+    <div class="foto"><img src="../img/hero.jpg" alt="Interior do Charme Brechó"></div>
+    <img class="logo-topo in" style="--d:1" src="../img/logo-selo.jpg" alt="Logo do Charme Brechó">
+    <div class="nome in">
+      <h1>Charme<br>Brechó<em>Moda circular na Consolação</em></h1>
+      <p>Roupa foi feita para <b>usar e reusar</b>. Peças únicas, garimpadas com carinho.</p>
+    </div>
+    <span class="crp in" style="--d:2"><svg><use href="#i-pin"/></svg>Rua da Consolação, 2190</span>
+    <svg class="ramo" viewBox="0 0 320 120" aria-hidden="true"><use href="#ramo"/></svg>
+  </header>
+
+  <nav class="links" aria-label="Links">
+    <a class="banner principal in" style="--d:3" data-wa="padrao" href="#" target="_blank" rel="noopener">
+      <svg class="ilus" viewBox="0 0 320 120" aria-hidden="true"><use href="#ramo"/></svg>
+      <span class="med"><svg><use href="#i-whats"/></svg></span>
+      <span class="txt"><b>Garimpe pelo WhatsApp</b><small>Fotos, medidas e reserva das peças</small></span>
+      <svg class="chev"><use href="#i-chev"/></svg>
+    </a>
+
+    <a class="banner in" style="--d:4;--sh:1.2s" data-link="instagram" href="#" target="_blank" rel="noopener">
+      <span class="bg" style="background-image:url('../img/destaque.jpg');--pos:50% 40%"></span>
+      <span class="med"><svg viewBox="0 0 40 40"><use href="#i-novo"/></svg></span>
+      <span class="txt"><span class="tag">Peças únicas</span><b>Veja o que chegou</b><small>Garimpos novos no Instagram</small></span>
+      <svg class="chev"><use href="#i-chev"/></svg>
+    </a>
+
+    <a class="banner in" style="--d:5;--sh:2.4s" data-link="site" href="#" target="_blank" rel="noopener">
+      <span class="bg" style="background-image:url('../img/modelos.jpg');--pos:50% 22%"></span>
+      <span class="med"><svg viewBox="0 0 40 40"><use href="#i-site"/></svg></span>
+      <span class="txt"><b>Conheça nosso site</b><small>Curadoria, vitrine e dúvidas</small></span>
+      <svg class="chev"><use href="#i-chev"/></svg>
+    </a>
+
+    <a class="banner claro in" style="--d:6;--sh:3.6s" data-link="mapa" href="#" target="_blank" rel="noopener">
+      <span class="bg" style="background-image:url('../img/loja.jpg');--pos:70% 40%"></span>
+      <span class="med"><svg viewBox="0 0 40 40"><use href="#i-loja"/></svg></span>
+      <span class="txt"><span class="tag">Com provador</span><b>Visite a loja</b><small>Galeria da Lotérica, pertinho da Paulista</small></span>
+      <svg class="chev"><use href="#i-chev"/></svg>
+    </a>
+
+    <a class="banner claro in" style="--d:7;--sh:4.8s" data-wa="masculino" href="#" target="_blank" rel="noopener">
+      <span class="bg" style="background-image:url('../img/masculino.jpg');--pos:50% 20%"></span>
+      <span class="med"><svg viewBox="0 0 40 40"><use href="#i-cabide"/></svg></span>
+      <span class="txt"><b>Garimpo masculino</b><small>Jaquetas, blazers e jeans com caráter</small></span>
+      <svg class="chev"><use href="#i-chev"/></svg>
+    </a>
+  </nav>
+
+  <div class="atalhos">
+    <a class="mini in" style="--d:8" data-link="instagram" href="#" target="_blank" rel="noopener"><span><svg><use href="#i-insta"/></svg></span><b>Instagram</b><small>Novidades</small></a>
+    <a class="mini in" style="--d:9" data-link="avaliacoes" href="#" target="_blank" rel="noopener"><span><svg><use href="#i-estrela"/></svg></span><b>Avaliações</b><small>4,9 no Google</small></a>
+    <a class="mini in" style="--d:10" data-link="mapa" href="#" target="_blank" rel="noopener"><span><svg><use href="#i-pin"/></svg></span><b>Como chegar</b><small>Consolação/SP</small></a>
+  </div>
+
+  <p class="frase in" style="--d:11"><svg><use href="#i-ramo"/></svg>Estilo autêntico não segue padrão. Segue garimpo.<small>Vista quem você é.</small></p>
+
+  <footer class="rod">
+    <div class="nums">
+      <div><b>4,9</b><small>no Google</small></div>
+      <div><b>Únicas</b><small>Peças garimpadas</small></div>
+      <div><b>9h–18h</b><small>Atendimento</small></div>
+    </div>
+    <div class="redes">
+      <span>Acompanhe o Charme</span>
+      <a data-link="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-insta"/></svg></a>
+      <a data-wa="padrao" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-whats"/></svg></a>
+      <a href="mailto:charmebrechoms@gmail.com" aria-label="E-mail"><svg><use href="#i-mail"/></svg></a>
+    </div>
+    <div class="assin">Charme Brechó</div>
+    <p class="legal">Charme Brechó · Rua da Consolação, 2190 · Galeria da Lotérica · São Paulo/SP<br>WhatsApp (11) 94544-1839 · Roupa foi feita para usar e reusar.</p>
+  </footer>
+</main>
+
+<script>
+{
+/* ===== Configuração (editar aqui) ===== */
+const CONFIG = {
+  whatsapp: "5511945441839",
+  mensagens: {
+    padrao: "Olá, Charme Brechó! Vim pelo link da bio e quero garimpar umas peças.",
+    masculino: "Olá! Vim pelo link da bio e quero ver as peças masculinas que chegaram."
+  },
+  links: {
+    site: "https://charme-brecho-exemplo.vercel.app/",
+    instagram: "https://www.instagram.com/charmebrecho__/",
+    avaliacoes: "https://www.google.com/maps/place/Charme+Brech%C3%B3/@-23.5537841,-46.6611383,17z/data=!4m6!3m5!1s0x94ce5929d3e42ee5:0x942df98a69b2bc7!8m2!3d-23.5537841!4d-46.6611383",
+    mapa: "https://www.google.com/maps/dir/?api=1&destination=Charme+Brech%C3%B3+Rua+da+Consola%C3%A7%C3%A3o+2190+S%C3%A3o+Paulo"
+  }
+};
+document.documentElement.classList.add('js');
+document.querySelectorAll('[data-wa]').forEach(a => a.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.mensagens[a.dataset.wa] || CONFIG.mensagens.padrao)}`);
+document.querySelectorAll('[data-link]').forEach(a => a.href = CONFIG.links[a.dataset.link] || '#');
+
+/* Folhas e flores caindo no fundo */
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const j = document.querySelector('.jardim');
+  const tipos = ['p-folha', 'p-folha', 'p-ramo', 'p-flor'];
+  const cores = ['#2E6B45', '#3E7A3A', '#7FA87A', '#C9A24E'];
+  const n = innerWidth < 520 ? 14 : 22;
+  let html = '';
+  for (let i = 0; i < n; i++) {
+    const t = tipos[i % tipos.length], flor = t === 'p-flor';
+    const c = flor ? (i % 3 ? '#E2C77F' : '#C9A24E') : cores[i % cores.length];
+    const s = (flor ? 14 : 18) + Math.random() * (flor ? 10 : 22);
+    html += `<span class="p" style="--x:${(Math.random() * 100).toFixed(1)}%;--s:${s.toFixed(0)}px;--c:${c};--o:${(.35 + Math.random() * .4).toFixed(2)};--t:${(16 + Math.random() * 18).toFixed(1)}s;--dl:-${(Math.random() * 30).toFixed(1)}s;--dx:${(Math.random() * 120 - 60).toFixed(0)}px;--g:${(3 + Math.random() * 4).toFixed(1)}s"><svg><use href="#${t}"/></svg></span>`;
+  }
+  j.insertAdjacentHTML('beforeend', html);
+}
+}
+</script>
+<div class="demo" role="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></svg><span><b>Versão de demonstração</b> · Prévia criada para apresentação ao Charme Brechó. Não publicada oficialmente.</span></div>
+</body>
+</html>
